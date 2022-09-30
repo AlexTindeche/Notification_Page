@@ -1,7 +1,18 @@
+@font-face {
+    font-family: plusJakartaSans;
+    src: url(../../assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
 .Notification_Box{
+    border-radius: 25px;
+    background-color: white;
     margin-left: 200px;
     margin-right: 200px;
+}
+
+.notification_title{
+    font-family: plusJakartaSans;
 }

@@ -2,40 +2,30 @@ import React from 'react';
 import '../styles/App.css';
 import Notification from './Notification.js';
 
-const items = [
-    'Mark Webber reacted to your recent post My first tournament today!',
-    'Angela Gray followed you',
-    'Jacob Thompson has joined your group Chess Club',
-    'Rizky Hasanuddin sent you a private message',
-    'Hello, thanks for setting up the Chess Club. I\'ve been a member for a few weeks now and',
-    'I\'m already having lots of fun and improving my game.',
-    'Kimberly Smith commented on your picture',
-    'Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win rate',
-    'Anna Kim left the group Chess Club'
+const names = [
+    'Mark Webber', 'Angela Grey', 'Jacob Thompson', 'Rizky Hasanuddin', 'Kimberly Smith', 'Nathan Peterson', 'Anna Kim'
 ]
+
+const items = [
+    ' reacted to your recent post My first tournament today!',
+    ' followed you',
+    ' has joined your group Chess Club',
+    ' sent you a private message',
+    ' commented on your picture',
+    ' reacted to your recent post 5 end-game strategies to increase your win rate',
+    ' left the group Chess Club'
+]
+
+const times = [ '1m', '5m', '1 day', '5 days', '1 week', '2 weeks', '2 weeks' ]
 
 export default () => {
     return (
         <div className = 'Notification_Box'>
-            <h1>Notifications 3</h1>
-            <Notification items = {items}/>
+            <h1 className={'notification_title'}>Notifications 3</h1>
+            <Notification names = {names} items = {items} times = {times}/>
             <div>
 
                 Mark all as read
-
-                1m ago
-
-                5m ago
-
-                1 day ago
-
-                5 days ago
-
-                1 week ago
-
-                2 weeks ago
-
-                2 weeks ago
 
                 <div className="attribution">
                     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend

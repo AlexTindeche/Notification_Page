@@ -1,0 +1,22 @@
+@font-face {
+    font-family: plusJakartaSans;
+    src: url(../../assets/fonts/static/PlusJakartaSans-Medium.ttf);
+}
+
+@font-face {
+    font-family: plusJakartaSansBold;
+    src: url(../../assets/fonts/static/PlusJakartaSans-ExtraBold.ttf);
+    font-weight: bold;
+}
+
+.rendered_items{
+    font-family: plusJakartaSans;
+}
+
+.name{
+    font-family: plusJakartaSansBold;
+}
+
+.notification_message{
+    color: grey;
+}
